@@ -1,0 +1,124 @@
+html {
+    height: 100%;
+    min height: 100%
+}
+
+#navbar {
+    display: grid;
+    grid-template-columns: 60px auto 60px 75px 50px 60px;
+    grid-template-rows: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#sign_in {
+    background-color: blue;
+}
+
+a {
+    text-decoration: none;
+    color: #323232;
+    font-family: arial, helvetica;
+    font-size: 14px;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 25% 55% 20%;
+    grid-template-rows: 175px 50px 70px 220px;
+    grid-template-areas: 
+    ". google_logo ."
+    ". search_bar ."
+    ". flexbox ."
+    ". google_fi ."
+    ;
+}
+
+#google_logo {
+    grid-area: google_logo;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+#search_bar {
+    grid-area: search_bar;
+    height: 40px;
+    width: 575px;
+    margin-left: 10px;
+    border-radius: 15px;
+    border-width: thin;
+    border-color: whitesmoke;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#flexbox {
+    grid-area: flexbox;
+    margin-left: 175px;
+}
+#google_search {
+    grid-area: google_search;
+    margin-right: 20px;
+    margin-top: 25px;
+    padding: 5px
+}
+
+#im_feeling_lucky {
+    grid-area: im_feeling_lucky;
+    padding: 5px;
+}
+
+#google_fi {
+    grid-area: google_fi;
+    margin-left: 155px
+}
+
+#footer {
+    display: grid;
+    grid-template-columns: 8% 8% 11% 49% 8% 8% 8%;
+    grid-template-rows: 50px;
+    background-color: #ececec;
+    grid-template-areas: 
+    "advertising business how_search_works carbon_neutral privacy terms settings";
+    align-content: center;
+}
+
+#carbon_neutral {
+    grid-area: carbon_neutral;  
+    margin-top: 15px;
+    margin-left: 180px;
+}
+
+#advertising {
+    grid-area: advertising;
+    margin-top: 15px;
+    margin-left: 20px
+}
+
+#business {
+    grid-area: business;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+#how_search_works {
+    grid-area: how_search works;
+    margin-top: 15px;
+}
+
+#privacy {
+    grid-area: privacy;
+    margin-top: 15px;
+    margin-left: 45px
+}
+
+#terms {
+    grid-area: terms;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+#settings {
+    grid-area: settings;
+    margin-top: 15px;
+}
